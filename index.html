@@ -1,0 +1,139 @@
+<html>
+
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body >
+    <section class="  bg-dark ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <input type="text" name=""
+                        class="form-control colorW border-3 text-center border-end-0 border-start-0 border-top-0   bg-transparent"
+                        id="searchHome" placeholder="search trend">
+                </div>
+                <div class="col-md-6 mt-5">
+                    <input type="text" name=""
+                        class="form-control colorW border-3 text-center border-end-0 border-start-0 border-top-0   bg-transparent"
+                        id="searchAll" placeholder="Get Movie by word">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-dark">
+        <div class="container">
+            <div class="row g-0 ps-4" id="Movies">
+
+            </div>
+        </div>
+    </section>
+    <section id="sidebar" class="position-fixed top-0 bottom-0 bg-white rounded-3">
+        <div class="d-flex justify-content-center align-items-center">
+            <div id="linkBox"
+                class="bg-dark p-5 d-flex flex-column justify-content-center align-items-center position-relative">
+                <div id="links" class="d-flex flex-column p-3 ">
+                    <a href="#home" id="nowPlaying" class="mt-5 item position-fixed"> Now playing </a>
+                    <a href="#home" id="pop" class="mt-5 item position-fixed"> Popular</a>
+                    <a href="#home" id="topRated"  class="mt-5 item position-fixed"> Top Rated </a>
+                    <a href="#home" id="tranding" class="mt-5 item position-fixed"> Trending </a>
+                    <a href="#home" id ="upcoming"class="mt-5 item position-fixed"> Upcoming </a>
+                    <a href="#contactus" class="mt-5 item position-fixed"> Contact Us </a>
+                </div>
+            </div>
+            <div id="toggleBtn" class="py-5 ps-2 pe-4">
+               <div class="position-fixed top-0 mt-4">
+                <i  class="fab fa-slack open colorBlack me-3 "></i>
+               </div>
+                <div class="position-fixed top-50 mt-4">
+                    <i id='demo' class="fas fa-bars open colorBlack"></i>
+                    <i id='close' class="fas fa-times open d-none colorBlack"></i>
+                </div>
+                <div class="position-fixed bottom-0  mb-4 d-flex flex-column ">
+                    <i class="fas fa-globe colorBlack my-3"></i>
+                    <i class="fas fa-share-alt colorBlack mt-3"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactus" class="bg-dark">
+        <div class="container  pt-5">
+            
+            <div class="row">
+                <h2 class="colorW">Contact Us..</h2>
+                <div class="col-md-6 mt-3 p-3 ">
+                    <div>
+                        <input type="text" name=""   class="mb-3 form-control colorW border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+                            id="nameInput" placeholder="Your Name">
+                        <span id="testName" class="colorW"></span>
+                    </div>
+                    <div>
+                        <input type="text" name=""  onkeyup='ckeckBtn ()' class="mb-3 form-control colorW border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+                            id="phoneInput" placeholder="Your Phone">
+                        <span id="testPhone" class="colorW"></span>
+                    </div>
+                    <div>
+                        <input type="password" name="" onkeyup='ckeckBtn ()' class="mb-3 form-control colorW border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+                            id="passwordInput" placeholder="Enter Password">
+                        <span id="testPassword" class="colorW"></span>
+                    </div>
+    
+                </div>
+                <div class="col-md-6 mt-3 p-3">
+                    <div>
+                        <input type="text" name=""   class="mb-3 form-control colorW border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+                            id="emailInput" placeholder="Email">
+                        <span id="testEmail" class="colorW"></span>
+                    </div>
+                    <div>
+                        <input type="text" name=""   class="mb-3 form-control colorW border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+                            id="ageInput" placeholder="Age">
+                        <span id="testAge" class="colorW"></span>
+                    </div>
+                    <div>
+                        <input type="password" name=""  class="mb-3 form-control colorW border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+                            id="password1Input" placeholder="Re-enter Password">
+                        <span id="testPassword1" class="colorW"></span>
+                    </div>
+                </div>
+                <div class="col-md-12" >
+                    <div class="ps-4 m-0 pb-2">
+                        <button id="mainButton" disabled='disabled '  class="btn btn-outline-danger mt-5">Submit</button>
+                     </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark d-flex  flex-column justify-content-center align-items-center pb-3 mb-0">
+        <div class="d-flex align-items-center justify-content-center mb-2 icons" >
+            <a href="https://www.facebook.com/MovieDbFanPage" target="_blank"><i class="fab fa-facebook colorW m-1"></i></a>
+            <i class="fab fa-instagram colorW m-1"></i>
+            <i class="fab fa-twitter colorW m-1"></i>
+            <i class="fab fa-youtube colorW m-1"></i>
+        </div>
+        
+        <p class="colorW">&copy; 2021, Movies Api - Terms of Service, Privacy Policy  </p>
+        <h3 class="colorW"> The End </h3>
+       
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
